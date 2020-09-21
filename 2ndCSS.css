@@ -34,6 +34,7 @@ p {
     box-shadow: 6px 6px 6px rgb(15, 6, 95);
            }
 
+           
 .coin2{
     border:2px solid rgb(28, 28, 29);
     -moz-border-radius:4px;
@@ -54,6 +55,60 @@ p {
         height:100%;
         width:100%;
         position:absolute;
+        }
+
+
+
+
+        @keyframes tipsy {
+          0 {
+            transform: translateX(-50%) translateY(-50%) rotate(0deg);
+          }
+          100% {
+            transform: translateX(-50%) translateY(-50%) rotate(360deg);
+          }
+        }
+        
+        body {
+          font-family: helvetica, arial, sans-serif;
+          background-color: #2e2e31;
+        }
+        
+        a {
+          color: rgb(9, 9, 82);
+          font-size: 25px;
+          font-weight: bold;
+          text-decoration: none;
+          letter-spacing: -3px;
+          margin: 0;
+          position: absolute;
+          top: 3%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+        }
+        
+        a:before,
+        a:after {
+          content: '';
+          padding: .9em .4em;
+          position: absolute;
+          left: 50%;
+          width: 100%;
+          top: 50%;
+          display: block;
+          border: 1px solid red;
+          transform: translateX(-50%) translateY(-50%) rotate(0deg);
+          animation: 17s infinite alternate ease-in-out tipsy;
+        }
+        
+        a:before {
+          border-color: #4aa0d9 #4aa0d9 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+          z-index: -1;
+        }
+        
+        a:after {
+          border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #1a796c #1a796c;
+          box-shadow: 0px 0px 0px rgba(46, 46, 49, .8);
         }
 
        
