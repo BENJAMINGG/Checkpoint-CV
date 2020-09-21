@@ -6,7 +6,7 @@ body {
     }
 
 h1 {
-    font-size: 200%; 
+    font-size: 300%; 
     color: rgb(9, 9, 82); 
     }
 .zoom div img {
@@ -100,7 +100,7 @@ p {
 /* animations */
 @keyframes revealBlock {
   100% {
-    color: #8f8f92;
+    color: #b3b3ce;
   }
 }
 
